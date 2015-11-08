@@ -44,7 +44,7 @@ public class CheckPoint : MonoBehaviour
                 // We search the activated checkpoint to get its position
                 if (cp.GetComponent<CheckPoint>().Activated)
                 {
-                    result = cp.transform.localPosition;
+                    result = cp.transform.position;
                     break;
                 }
             }
