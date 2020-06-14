@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 public class CheckPoint : MonoBehaviour 
 {
@@ -22,7 +24,7 @@ public class CheckPoint : MonoBehaviour
     /// <summary>
     /// List with all checkpoints objects in the scene
     /// </summary>
-    public static GameObject[] CheckPointsList;
+    public static List<GameObject> CheckPointsList;
 
     #endregion
 
@@ -81,7 +83,7 @@ public class CheckPoint : MonoBehaviour
         thisAnimator = GetComponent<Animator>();
 
         // We search all the checkpoints in the current scene
-        CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint");
+        CheckPointsList = GameObject.FindGameObjectsWithTag("CheckPoint").ToList();
     }
 
     void OnTriggerEnter(Collider other)
