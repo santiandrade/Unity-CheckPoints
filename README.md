@@ -17,4 +17,4 @@ Once we create the checkpoint object, we can store it as a prefab (you can find 
 Now you can to call to the static function "CheckPoint.GetActiveCheckPointPosition()" from any place of your code to get the position of the last activated checkpoint object (for example you can use it when your player die).
 
 ## This project
-You will find a fully functional example made with Unity 5. Enjoy!
+You will find a fully functional example made with Unity 2019. Enjoy!
